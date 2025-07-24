@@ -28,7 +28,7 @@ body {
 
 
 /* NAVIGATION STYLES */
-nav {
+.nav-container {
     margin-top: 25px;
 }
 
@@ -51,14 +51,14 @@ nav {
     text-decoration: none;
 }
 
-nav ul {
+.nav-links ul {
     list-style-type: none;
     display: flex;
     gap: 35px;
 
 }
 
-nav ul li {
+.nav-links ul li {
     color: #000000;
     font-size: 1.1rem;
 
@@ -73,6 +73,7 @@ nav ul li {
 .banner-container {
     /* border: 2px solid #E95A08; */
     height: 400px;
+    justify-content: space-between;
 }
 
 .banner-image img {
@@ -84,13 +85,10 @@ nav ul li {
 
 .banner-text {
     margin-top: 144px;
-    order: 1;
-}
-.banner-image{
-    order: 2;
 }
 
-.banner-text h3 {
+
+.banner-text h3  {  
     font-size: 2.5rem;
     color: #E95A08;
     margin-bottom: 10px;
@@ -99,9 +97,44 @@ nav ul li {
 
 .banner-text p {
     color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 10px;
     font-size: 1.10rem;
+    text-emphasis: none;
 }
+
+
+/* PLANTS SECTION */
+
+.plant-section {
+    border: 2px solid red;;
+    justify-content: center;
+    align-items: center;
+
+}
+ .plant-text{
+    margin-top: 100px;
+     border: 2px solid rgb(6, 91, 7);
+    text-align: center;
+    margin: 0 auto;
+    
+    }
+.plant-text h3 {
+    font-size: 2.5rem;
+    color: #E95A08;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif', serif;
+}
+.plant-text p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    
+} 
+
+
+
+
+
+
 
 
 
@@ -113,9 +146,14 @@ nav ul li {
 
 
 /* resposive design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
     .hide-nav {
         display: none;
+    }
+    .nav-main{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 20px;
     }
 
     .width{
@@ -125,31 +163,30 @@ nav ul li {
 
     .cart {
         margin-top: 10px;
+        margin-left: 189px;
     }
 
     .logo {
         width: 100px;
         height: 58px;
     }
+    
     /* banner */
+
     .banner-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin-top: 220px;
     }
+    .banner-image {
+    width: calc(100% + 24px);
+    margin-top: 10%;
+  }
     .banner-text {
         margin-top: 10px;
-        order: 2;
-        
     }
-    .banner-image img {
-        width: 100%;
-        margin: 0px;
-    
-  }
-  .banner-image {
-    width: calc(100% + 23px);
-    order: 1;
-  }
 
-
+    .plant-section {
+        width: calc(100% + 150px);
+    }
 
 }
