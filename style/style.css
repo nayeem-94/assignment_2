@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
     background-color: #F5F8FF;
 }
@@ -65,6 +68,49 @@ nav ul li {
     gap: 5px;
 }
 
+/* banner design  */
+
+.banner-container {
+    /* border: 2px solid #E95A08; */
+    height: 400px;
+}
+
+.banner-image img {
+    width: 560px;
+    height: 294px;
+    margin-bottom: 0px;
+    margin-top: 106px;
+}
+
+.banner-text {
+    margin-top: 144px;
+    order: 1;
+}
+.banner-image{
+    order: 2;
+}
+
+.banner-text h3 {
+    font-size: 2.5rem;
+    color: #E95A08;
+    margin-bottom: 10px;
+    font-family: 'Noto Serif', serif;
+}
+
+.banner-text p {
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+    font-size: 1.10rem;
+}
+
+
+
+
+
+
+
+
+
 
 /* resposive design */
 @media screen and (max-width: 768px) {
@@ -72,16 +118,38 @@ nav ul li {
         display: none;
     }
 
-    .width {
+    .width{
         width: calc(100% - 30px);
         margin: 0 auto;
     }
-    .cart{
-        margin-top : 10px;
+
+    .cart {
+        margin-top: 10px;
     }
 
     .logo {
         width: 100px;
         height: 58px;
     }
+    /* banner */
+    .banner-container {
+        flex-direction: column;
+    }
+    .banner-text {
+        margin-top: 10px;
+        order: 2;
+        
+    }
+    .banner-image img {
+        width: 100%;
+        margin: 0px;
+    
+  }
+  .banner-image {
+    width: calc(100% + 23px);
+    order: 1;
+  }
+
+
+
 }
