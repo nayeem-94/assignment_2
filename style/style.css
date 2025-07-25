@@ -276,7 +276,10 @@ body {
 
 .box-1{
     grid-column: span 1;
-    background-image: url(./assets/deal-bloom.png);
+    /* background-image: url(./assets/deal-bloom.png); */
+    background-image: url('../assets/deal-bloom.png');
+    /* background-image: url('../assets/deal-bloom.png'); */
+
     backface-visibility: 200%;
     background-repeat:no-repeat;
     width: 365px;
@@ -294,7 +297,9 @@ body {
 
 .box-3{
     grid-column: span 1;
-    background-image: url(./assets/deal-ana.png);
+    /* background-image: url(./assets/deal-ana.png); */
+    background-image: url('/assets/deal-ana.png');
+
     width: 365px;
     color: rgb(255, 255, 255);
     display: flex;
@@ -310,7 +315,9 @@ body {
 .box-2
 {
     grid-row: span 2 ;
-    background-image: url(./assets/deal-zabo.png);
+    /* background-image: url(./assets/deal-zabo.png); */
+    background-image: url('/assets/deal-zabo.png');
+
     width: 570px;
     color: rgb(255, 255, 255);
     display: flex;
