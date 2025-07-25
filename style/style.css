@@ -308,7 +308,6 @@ body {
     border-radius: 20px;
     margin-top: 5px;
 
-
 }
 
 .box-2
@@ -333,6 +332,53 @@ body {
 
 
 
+
+
+.join-section-container
+{
+    /* background-color: #E95A08;
+     */
+     background-image: url('../assets/news-letter-bg.png');
+     background-position: center;
+     width: 100%;
+     height: 530px;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     display: flex;
+}
+
+.join-section-container h3
+{
+    color: white;
+    font-size: 40px;
+    font-family: 'Noto Serif', serif;
+
+}
+.join-section-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 190px;
+}
+.join-section-container div button
+{
+    
+    background-color: #E95A08;
+    color: white;
+    height: 42px;
+    width: 200px;
+    font-size:  2.4vh;
+    margin-right: 200px ;
+    box-shadow: none;
+    
+}
+
+.join-section-container div input{
+    height: 35px;
+    width:600px ;
+}
 
 
 
@@ -434,6 +480,12 @@ body {
         margin-left: 100px;
         /* margin-bottom: 100px; */
     }
+    .box-2{
+        order: 3;
+    }
+    .box-3{
+        order: 2;
+    }
 
     .box-1 , .box-2 , .box-3{
         background-position: center;
@@ -443,6 +495,30 @@ body {
         border-radius: 30px;
 
     }
+
+    .last-upper-section
+    {
+       display: block;
+       margin-bottom: 300px;
+    }
+
+    .join-section-container{
+        width: 578px;
+        height: 370px;
+    }
+    .join-section-container h3
+    {
+        font-size: 30px;
+    }
+    .join-section-container div button{
+        width: 190px;
+        font-size: 18px;
+
+    }
+    .join-section-container div input{
+    height: 35px;
+    width:350px ;
+}
 
    
 
